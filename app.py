@@ -239,7 +239,7 @@ print(a, b, c, d) """
 
 # Dictionary
 
-n = int(input("Enter no. of values : "))
+""" n = int(input("Enter no. of values : "))
 dict = {}
 for i in range(n):
     key = input("Enter Key ")
@@ -249,3 +249,25 @@ print(dict)
 
 print(dict["name"])
 print(dict.get("name"))
+ """
+
+# Sets
+
+set1 = set()  # Declaring empty set
+print(set1)
+set1 = set("Tejaswini Hegde")
+print(set1)
+
+print(dir(set))
+
+n = int(input("Enter no. of values : "))
+s1 = set()
+for i in range(n):
+    item = input(f"Enter {i} element : ")
+    s1.add(item)
+
+print("your set is : ", s1)
+i = input("Enter item to be deleted : ")
+s1.remove(i)
+
+print("your set is : ", s1)
