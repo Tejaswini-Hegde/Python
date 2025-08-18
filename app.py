@@ -251,7 +251,7 @@ print(dict["name"])
 print(dict.get("name"))
  """
 
-# Sets
+""" # Sets
 
 set1 = set()  # Declaring empty set
 print(set1)
@@ -271,3 +271,35 @@ i = input("Enter item to be deleted : ")
 s1.remove(i)
 
 print("your set is : ", s1)
+ """
+
+"""f = open("myData", 'r')
+print(f)
+
+print(f.read())
+
+print("Reading firstline")
+
+print(f.readline())
+ """
+""" f1 = open("textFile", 'w')
+
+s = "Im writing code in VS Code"
+f1.write(s)
+
+f1 = open("textFile", 'r') """
+""" 
+print(f1.read())
+
+f1 = open("textFile", 'a')
+f1.write("started logging")
+
+
+f1 = open("textFile", 'r')
+
+print(f1.read()) """
+
+f1 = open("myData", 'r')
+f2 = open("textFile", 'a')
+for data in f1:
+    f2.write(data)
