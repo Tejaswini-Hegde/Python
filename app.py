@@ -299,7 +299,15 @@ f1 = open("textFile", 'r')
 
 print(f1.read()) """
 
+with open('textFile', 'w') as f1:  # Clears file
+    pass
+
 f1 = open("myData", 'r')
 f2 = open("textFile", 'a')
+
 for data in f1:
     f2.write(data)
+
+f1.close()
+f2.close()
+
