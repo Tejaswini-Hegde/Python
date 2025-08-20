@@ -273,15 +273,15 @@ s1.remove(i)
 print("your set is : ", s1)
  """
 
-"""f = open("myData", 'r')
+f = open("myData", 'r')
 print(f)
 
-print(f.read())
+# print(f.read())
 
 print("Reading firstline")
 
 print(f.readline())
- """
+
 """ f1 = open("textFile", 'w')
 
 s = "Im writing code in VS Code"
@@ -299,7 +299,7 @@ f1 = open("textFile", 'r')
 
 print(f1.read()) """
 
-with open('textFile', 'w') as f1:  # Clears file
+""" with open('textFile', 'w') as f1:  # Clears file
     pass
 
 f1 = open("myData", 'r')
@@ -309,5 +309,4 @@ for data in f1:
     f2.write(data)
 
 f1.close()
-f2.close()
-
+f2.close() """
