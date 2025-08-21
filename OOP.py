@@ -1,4 +1,4 @@
-""" # Example 1
+# Example 1
 
 class Dog:
     def __init__(self):
@@ -34,16 +34,16 @@ class Dog:
         # return self.name
 
 
- d = Dog("Tom", 3)
+d = Dog("Tom", 3)
 print(d.getName())
 print(d.getAge())
 d1 = Dog("bruno", 4)
 d.setName("Lion")
-print(d.getName()) """
+print(d.getName())
 
 
 # Example 3
-"""
+
 class Student:
     def __init__(self, name, age, grade):
         self.name = name
@@ -84,13 +84,13 @@ course.addStudents(s2)
 print(course.students)
 print(course.students[0].name, course.students[1].name)
 print(course.getAverage())
- """
+
 
 # Inheritance
 # Example1
 
 
-""" class Pet:
+class Pet:
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -99,10 +99,10 @@ print(course.getAverage())
         print(f"Im {self.name} and my age is {self.age} ")
 
     def speak(self):
-        print("I shout like anything") """
+        print("I shout like anything")
 
 
-""" class Cat(Pet):
+class Cat(Pet):
     def __init__(self, name, age, color):
         super().__init__(name, age)
         self.color = color
@@ -135,9 +135,9 @@ c.speak()
 d.show()
 d.speak()
 f.speak()
- """
 
-""" # Class Attributes
+
+# Class Attributes
 
 
 class Person:
@@ -153,7 +153,7 @@ p1 = Person("Tejaswini")
 print(Person.no_of_People)
 p2 = Person("Tara")
 print(p2.no_of_People)
- """
+
 # Class methods
 
 
@@ -172,7 +172,8 @@ class Person:
     def add(cls):
         cls.no_of_People += 1
 
-    """@classmethod
+
+"""     @classmethod
     def no_of_People_(cls):
         return cls.no_of_People
 
@@ -186,3 +187,15 @@ print(Person.printNo())
 
 p2 = Person("Tejaswini")
 print(Person.printNo())
+
+
+# Static method example
+
+class statEx():
+    @staticmethod
+    def add5(x):
+        return x+5
+
+
+s = statEx()
+print(s.add5(5))
