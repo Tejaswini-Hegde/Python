@@ -114,7 +114,7 @@ for i in numbers:
         print("*", end="")
     print() """
 
-""" # Find Largest number n the list
+""" # Find Largest number in the list
 num = int(input("Enter number of items you want to insert into list : "))
 list1 = []
 for i in range(num):

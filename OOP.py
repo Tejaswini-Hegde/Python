@@ -1,4 +1,4 @@
-# Example 1
+""" # Example 1
 
 class Dog:
     def __init__(self):
@@ -134,11 +134,11 @@ c.show()
 c.speak()
 d.show()
 d.speak()
-f.speak()
+f.speak() """
 
 
 # Class Attributes
-
+""" 
 
 class Person:
     no_of_People = 0  # Class attributes
@@ -170,7 +170,7 @@ class Person:
 
     @classmethod
     def add(cls):
-        cls.no_of_People += 1
+        cls.no_of_People += 1 """
 
 
 """     @classmethod
@@ -182,7 +182,7 @@ class Person:
         cls.no_of_People += 1 """
 
 
-p1 = Person("Tejaswini")
+""" p1 = Person("Tejaswini")
 print(Person.printNo())
 
 p2 = Person("Tejaswini")
@@ -198,4 +198,80 @@ class statEx():
 
 
 s = statEx()
-print(s.add5(5))
+print(s.add5(5)) """
+
+# Access specifiers
+
+
+""" class Employee:
+    id = 30  # Public
+
+    def __init__(self, name):
+        self.__name = name  # Private
+
+    def printId(self):
+        print(f"id is : {Employee.id}")
+
+
+emp = Employee("Teju")
+# print(emp.__name)   -- Cannot be accessed directly as it is private
+print(emp._Employee__name)  # Can be accessed via name mangling
+emp.printId() """
+
+
+""" class Solution:
+    def reverse(self, x: int) -> int:
+        n = x
+        sign = -1 if n < 0 else 1
+        n = abs(n)
+        reversed_num = 0
+
+        while n != 0:
+            digit = n % 10
+            reversed_num = (reversed_num*10)+digit
+            n = n//10
+        return sign*reversed_num
+
+
+x = int(input("Enter"))
+s = Solution()
+result = s.reverse(x)
+print(result) """
+# Polymorphism
+
+
+from abc import ABC, abstractmethod
+class Shape():
+    @abstractmethod
+    def area():
+        pass
+
+
+class Circle():
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14*self.radius**2
+
+
+class Square():
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side**2
+
+
+class Triangle():
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5*self.base*self.height
+
+
+shapes = [Circle(3), Square(5), Triangle(3, 4)]
+for shape in shapes:
+    print(shape.area())
